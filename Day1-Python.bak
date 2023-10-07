@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2021.4">
+<AlteryxDocument yxmdVer="2021.1">
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="90" />
+        <Position x="66" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -37,20 +37,20 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="JupyterCode">
-        <Position x="246" y="90" />
+        <Position x="258" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <WorkflowName>c:\users\samijayne\documents\github\adventofcode2021\day1-python.yxmd</WorkflowName>
+          <WorkflowName>c:\users\samijayne\onedrive\alteryx ace\advent of code 2021\day 1\day1-python.yxmd</WorkflowName>
           <JupyterProduction>false</JupyterProduction>
-          <vEnvName>designerbasetools_venv</vEnvName>
+          <vEnvName>jupytertool_venv</vEnvName>
           <DefaultVenv>1</DefaultVenv>
           <productionModeScript />
-          <Port>55574</Port>
-          <JupyterGuidDir>cd37f735f9cf6f7d07d70286badcd5ed</JupyterGuidDir>
+          <Port>56372</Port>
+          <JupyterGuidDir>15af160c-9d21-4750-a80b-3c80cceef82b</JupyterGuidDir>
           <JupyterGuidCopy />
-          <LastExecutedByEngineVersion>2021.4.1.04899</LastExecutedByEngineVersion>
-          <Notebook><![CDATA[{"cells":[{"cell_type":"markdown","metadata":{"ayx":{"cell_class":"text_cell","cell_css":"border: 3px solid #357; margin: 4px; background: #fbffff","cell_type":"markdown","contents_keyword":"Alteryx.help()","first_line":"Run `Alteryx.help()` for info about useful functions.","label":"info"}},"source":["Run `Alteryx.help()` for info about useful functions.  \n","i.e., `Alteryx.read(\"#1\")`, `Alteryx.write(df,1)`, `Alteryx.getWorkflowConstant(\"Engine.WorkflowDirectory\")`"]},{"cell_type":"code","execution_count":1,"metadata":{"ayx":{"cell_class":"code_cell","cell_css":"border: 1px solid #58a; margin: 2px;","cell_type":"code","contents_keyword":"installPackages","first_line":"# List all non-standard packages to be imported by your","label":"deps"}},"outputs":[],"source":["# List all non-standard packages to be imported by your \n","# script here (only missing packages will be installed)\n","from ayx import Package\n","#Package.installPackages(['pandas','numpy'])"]},{"cell_type":"code","execution_count":2,"metadata":{},"outputs":[],"source":["from ayx import Alteryx\n","df=Alteryx.read(\"#1\")\n","\n","#Rolling Window\n","output=(df.rolling(window=3).sum())\n","Alteryx.write(output,1)\n","\n","#create a column for new data\n","output['Diff'] = 0\n","\n","#ROW SUBTRACTION\n","for i in range(1,2000):\n","    output['Diff'].iloc[i] = output['DATA'].iloc[i]-output['DATA'].iloc[i-1]\n","Alteryx.write(output,2)"]}],"metadata":{"kernelspec":{"display_name":"designerbasetools_venv","language":"python","name":"designerbasetools_venv"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.8.5"}},"nbformat":4,"nbformat_minor":2}]]></Notebook>
+          <LastExecutedByEngineVersion>2021.1.2.20534</LastExecutedByEngineVersion>
+          <Notebook><![CDATA[{"cells":[{"cell_type":"markdown","metadata":{"ayx":{"cell_class":"text_cell","cell_css":"border: 3px solid #357; margin: 4px; background: #fbffff","cell_type":"markdown","contents_keyword":"Alteryx.help()","first_line":"Run `Alteryx.help()` for info about useful functions.","label":"info"}},"source":["Run `Alteryx.help()` for info about useful functions.  \n","i.e., `Alteryx.read(\"#1\")`, `Alteryx.write(df,1)`, `Alteryx.getWorkflowConstant(\"Engine.WorkflowDirectory\")`"]},{"cell_type":"code","execution_count":1,"metadata":{"ayx":{"cell_class":"code_cell","cell_css":"border: 1px solid #58a; margin: 2px;","cell_type":"code","contents_keyword":"installPackages","first_line":"# List all non-standard packages to be imported by your","label":"deps"}},"outputs":[],"source":["# List all non-standard packages to be imported by your \n","# script here (only missing packages will be installed)\n","from ayx import Package\n","#Package.installPackages(['pandas','numpy'])"]},{"cell_type":"code","execution_count":2,"metadata":{},"outputs":[],"source":["from ayx import Alteryx\n","df=Alteryx.read(\"#1\")\n","\n","#Rolling Window\n","output=(df.rolling(window=3).sum())\n","Alteryx.write(output,1)\n","\n","#create a column for new data\n","output['Diff'] = 0\n","\n","#ROW SUBTRACTION\n","for i in range(1,2000):\n","    output['Diff'].iloc[i] = output['DATA'].iloc[i]-output['DATA'].iloc[i-1]\n","Alteryx.write(output,2)"]}],"metadata":{"kernelspec":{"display_name":"jupytertool_venv","language":"python","name":"jupytertool_venv"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.8.5"}},"nbformat":4,"nbformat_minor":2}]]></Notebook>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -73,7 +73,7 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="150" y="90" />
+        <Position x="162" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -94,11 +94,11 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="438" y="54" />
+        <Position x="450" y="18" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_14356_c3fcf05cc09f49f58f32642f0ac13c8c_\Engine_26968_71161b21002447088a88f3facb517540_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_11676_57b1c918d5d14ef0b17f451c808b76bd_\Engine_15648_f56342da366b4cd9ada25b20236b79e9_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -122,11 +122,11 @@
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="486" y="90" />
+        <Position x="498" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_14356_c3fcf05cc09f49f58f32642f0ac13c8c_\Engine_26968_c9c278e43ba7461da8880543ad231dfd_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_11676_57b1c918d5d14ef0b17f451c808b76bd_\Engine_15648_a6179b8308954415a513682e093b1e7a_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -150,7 +150,7 @@
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="390" y="102" />
+        <Position x="402" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -212,7 +212,6 @@
     <CancelOnError value="False" />
     <DisableBrowse value="False" />
     <EnablePerformanceProfiling value="False" />
-    <PredictiveToolsCodePage value="1252" />
     <DisableAllOutput value="False" />
     <ShowAllMacroMessages value="False" />
     <ShowConnectionStatusIsOn value="True" />
@@ -236,11 +235,6 @@
         <Description />
         <File />
       </Example>
-      <WorkflowId value="976e57d8-408a-4716-b4e1-37a1210628a6" />
-      <Telemetry>
-        <PreviousWorkflowId value="" />
-        <OriginWorkflowId value="976e57d8-408a-4716-b4e1-37a1210628a6" />
-      </Telemetry>
     </MetaInfo>
     <Events>
       <Enabled value="True" />

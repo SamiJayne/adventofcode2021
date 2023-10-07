@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2021.4">
+<AlteryxDocument yxmdVer="2021.1">
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="54" />
+        <Position x="78" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -27,6 +27,9 @@
           <DefaultAnnotationText>Day1-Input.txt</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Field_1" size="254" source="File: C:\Users\SamiJayne\OneDrive\ALTERYX ACE\Advent of Code 2021\Day 1\Day1-Input.txt" type="V_String" />
@@ -37,7 +40,7 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="174" y="54" />
+        <Position x="198" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -61,7 +64,7 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="294" y="54" />
+        <Position x="318" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -80,11 +83,11 @@
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="390" y="54" />
+        <Position x="414" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_21652_749c1ab9edd646d1a003555f2e095ba9_\Engine_26968_cb373c6d7a2748ae9af846172c318117_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_17440_4af20100693c445d9a696bd568263cb3_\Engine_15648_3b504201dfc64b648a5f3bedbb7f4a52_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -108,7 +111,7 @@
     </Node>
     <Node ToolID="8">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="174" y="270" />
+        <Position x="198" y="270" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -132,7 +135,7 @@
     </Node>
     <Node ToolID="9">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="294" y="270" />
+        <Position x="318" y="270" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -156,7 +159,7 @@
     </Node>
     <Node ToolID="12">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="402" y="270" />
+        <Position x="426" y="270" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -175,22 +178,17 @@
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="498" y="270" />
+        <Position x="522" y="270" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_21652_749c1ab9edd646d1a003555f2e095ba9_\Engine_26968_766985b5a0bc46eab5bb7cd0339345b6_.yxdb</TempFile>
-          <TempFileDataProfiling />
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_17440_4af20100693c445d9a696bd568263cb3_\Engine_15648_045008601f6f443593a335dfe59b0386_.yxdb</TempFile>
           <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
             <View1>
-              <DefaultTab>Profile</DefaultTab>
               <Hints>
                 <Table />
               </Hints>
             </View1>
-            <View2 />
           </Layout>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -242,7 +240,6 @@
     <CancelOnError value="False" />
     <DisableBrowse value="False" />
     <EnablePerformanceProfiling value="False" />
-    <PredictiveToolsCodePage value="1252" />
     <DisableAllOutput value="False" />
     <ShowAllMacroMessages value="False" />
     <ShowConnectionStatusIsOn value="True" />
@@ -266,11 +263,6 @@
         <Description />
         <File />
       </Example>
-      <WorkflowId value="9a6a8aa9-902a-4372-b5e7-9c75faf2405f" />
-      <Telemetry>
-        <PreviousWorkflowId value="" />
-        <OriginWorkflowId value="9a6a8aa9-902a-4372-b5e7-9c75faf2405f" />
-      </Telemetry>
     </MetaInfo>
     <Events>
       <Enabled value="True" />
